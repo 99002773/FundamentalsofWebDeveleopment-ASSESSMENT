@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./web.css">
+    <title>User Registration</title>
+    <script>
+        function view() {
+            document.getElementById("printhere").innerHTML="successfully registered";
+
+        }
+        
+     </script>
+ 
+</head>
+<body>
+    <section>
+        <h2 class="subheading">web forms</h2>
+    </section>
+    <div>
+    <section>
+        <form>
+            <p>Enter the name:<input type="text" placeholder="enter the name" id="username"/> </p>
+            <p>Enter the email:<input type="email" placeholder="enter the email" id="useremail"/></p>
+            <p>Enter the date-of-birth:<input type="date" placeholder="enter the date og birth" id="userdob"/> </p>
+            <p>Enter the contact number:<input type="tel" placeholder="enter the number" id="usernum"/> </p>
+            <P>Enter address
+                <textarea id="useraddress">
+            </textarea>
+            </p>
+            <p> Cities
+               
+                <datalist id="liststates">
+                    <option>Telangana</option>
+                    <option>Andrapradesh</option>
+                    <option>DElhi</option>
+                    <option>mysuru</option>
+                    <option>khammam</option>
+                </datalist>
+           
+            </p>
+            <input type="name" placeholder="select cities" list="liststates"/>
+            <p>
+            select qualifications:<br/>
+            <select id="educationalqualifications">
+                <option>graduation</option>
+                <option>ssc</option>
+                <option>inter</option>
+                <option>pg</option>
+            </select>
+             </p>
+             <p>Gender:
+                <p> <input type="radio" name="gender">female</p>
+            <p> <input type="radio" name="gender">male</p>
+            <p><input type="radio" name="gender">other</p>
+        
+        
+             <button type="button" onclick="view()">register</button>
+            <p id="para"></p>
+
+        
+        </form>
+    </section>
+</div>
+</body>
+</html>
